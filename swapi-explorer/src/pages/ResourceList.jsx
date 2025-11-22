@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-// IMPORTANTE: Agregamos las extensiones .js y .jsx explícitamente para evitar errores de resolución
+// Importaciones ajustadas a tus archivos existentes
 import useFetch from '../hooks/UseFetch.jsx';
 import { parseSwapiURL } from '../utils/urlHelpers.jsx';
 import { Loading, ErrorMsg, Button } from '../components/ui/Common.jsx';
@@ -49,7 +49,6 @@ const ResourceList = () => {
         })}
       </div>
 
-      {/* Paginación simple */}
       <div className="flex justify-center gap-4 pt-4">
         <Button onClick={() => setPage(p => p - 1)} disabled={!data?.previous}>
           <ChevronLeft size={16} /> Anterior
